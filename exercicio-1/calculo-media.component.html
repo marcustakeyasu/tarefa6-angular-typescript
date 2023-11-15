@@ -1,0 +1,22 @@
+<div>
+    <h2>Calculo de Média</h2>
+    <label for="ac1">AC1:</label>
+    <input [(ngModel)]="ac1" type="number" id="ac1" name="ac1" />
+  
+    <label for="ac2">AC2:</label>
+    <input [(ngModel)]="ac2" type="number" id="ac2" name="ac2" />
+  
+    <label for="ag">AG:</label>
+    <input [(ngModel)]="ag" type="number" id="ag" name="ag" />
+  
+    <label for="af">AF:</label>
+    <input [(ngModel)]="af" type="number" id="af" name="af" />
+  
+    <button (click)="calcularMedia()">Calcular</button>
+  
+    <div *ngIf="media > 0">
+      <p>Média: {{ media.toFixed(2) }}</p>
+      <p>Resultado: {{ resultado }}</p>
+    </div>
+  </div>
+  
